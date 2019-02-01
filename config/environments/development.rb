@@ -18,4 +18,5 @@ Rails.application.configure do
 
   # Print deprecation notices to stderr and the Rails logger.
   config.active_support.deprecation = [:stderr, :log]
+	config.action_cable.allowed_request_origins = [%r{https?://\S+}]
 end
